@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basketball World</title>
+
+<style>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* SCROLL HALUS */
+html {
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  text-align: center;
+  z-index: 100;
+}
+
+nav a {
+  color: #f39c12;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* SECTION */
+section {
+  min-height: 100vh;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* HERO */
+.hero h1 {
+  font-size: 3em;
+  animation: fadeDown 1.5s ease;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 800px;
+  animation: fadeUp 1.5s ease;
+}
+
+/* IMAGE */
+img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* ANIMASI */
+@keyframes fadeDown {
+  from {opacity:0; transform: translateY(-30px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+@keyframes fadeUp {
+  from {opacity:0; transform: translateY(30px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2em;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIK OTOMATIS -->
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7c9b2a7a2a.mp3" type="audio/mpeg">
+</audio>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#history">History</a>
+  <a href="#skills">Skills</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="hero">
+  <h1>🏀 Basketball World</h1>
+  <p>Energi, Kecepatan, dan Kerja Tim</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="card">
+    <h2>Apa itu Basketball?</h2>
+    <p>
+      Basket adalah olahraga tim yang mengandalkan kecepatan, ketepatan, dan kerja sama.
+      Setiap tim berusaha mencetak poin dengan memasukkan bola ke ring lawan.
+    </p>
+    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b" alt="Basketball">
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section id="history">
+  <div class="card">
+    <h2>Sejarah Singkat</h2>
+    <p>
+      Basket diciptakan oleh Dr. James Naismith pada tahun 1891.
+      Kini, basket menjadi salah satu olahraga paling populer di dunia.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="card">
+    <h2>Teknik Dasar Basket</h2>
+    <p>✔ Dribbling<br>✔ Passing<br>✔ Shooting<br>✔ Defense</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 | Tugas Informatika | Tema Basketball
+</footer>
+
+</body>
+</html>
